@@ -3,16 +3,24 @@
 include('/laragon/www/mysql-atividade/back-end/conexao.php'); // Altere para o caminho correto do seu arquivo de conexão
 
 $categorias = [
-    "Placa-mãe",
-    "Processador",
-    "Memória RAM",
-    "Placa de Vídeo",
-    "Fonte",
-    "Gabinete",
-    "HD/SSD",
-    "Cooler",
-    "Monitor",
-    "Periféricos"
+    "Alvenaria",
+    "Concreto e Argamassa",
+    "Aço e Ferragens",
+    "Madeiras",
+    "Hidráulica",
+    "Elétrica",
+    "Impermeabilizantes",
+    "Pisos e Revestimentos",
+    "Tintas e Acessórios",
+    "Ferramentas",
+    "EPI (Equipamentos de Proteção Individual)",
+    "Portas e Janelas",
+    "Telhas e Coberturas",
+    "Canos e Conexões",
+    "Parafusos e Fixadores",
+    "Vedação e Selantes",
+    "Iluminação",
+    "Acessórios de Banheiro e Cozinha"
 ];
 
 $stmt = $pdo->prepare("INSERT INTO categoria (nome) VALUES (:nome)");
